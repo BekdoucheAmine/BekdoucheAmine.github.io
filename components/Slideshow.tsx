@@ -25,7 +25,7 @@ export default function Slideshow({ slides }: { slides: Slide[] }) {
   const togglePause = () => setPaused((prev) => !prev);
 
   return (
-    <div className="w-full relative border rounded-2xl overflow-hidden h-[420px] bg-black">
+    <div className="w-full relative border rounded-2xl h-[420px] bg-black">
       {slides.map((slide, i) => (
         <img
           key={i}
@@ -40,13 +40,13 @@ export default function Slideshow({ slides }: { slides: Slide[] }) {
       {/* Controls */}
       <button
         onClick={prev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white px-3 py-1 rounded z-20"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black px-3 py-1 rounded z-20"
       >
         ←
       </button>
       <button
         onClick={next}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white px-3 py-1 rounded z-20"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black px-3 py-1 rounded z-20"
       >
         →
       </button>
@@ -54,7 +54,7 @@ export default function Slideshow({ slides }: { slides: Slide[] }) {
       {/* Pause/Play Button */}
       <button
         onClick={togglePause}
-        className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white px-3 py-1 rounded z-20"
+        className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black px-3 py-1 rounded z-[9999]"
       >
         {paused ? "▶" : "⏸"}
       </button>
