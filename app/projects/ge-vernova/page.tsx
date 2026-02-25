@@ -18,7 +18,7 @@ export default function Project() {
         </p>
 
         <a
-          href="/reports/ge/fpga-spy-report.pdf"
+          href="/reports/ge/report.pdf"
           download
           className="inline-block bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition"
         >
