@@ -21,8 +21,13 @@ export default function Contact() {
   );
 }
 
-// Helper component to keep the contact area clean and organized
-const ContactLink = ({ label, href, value }) => (
+interface ContactLinkProps {
+  label: string;
+  href: string;
+  value: string;
+}
+
+const ContactLink = ({ label, href, value }: ContactLinkProps) => (
   <a 
     href={href} 
     className="block p-4 bg-background dark:bg-gray-950 border border-gray-100 dark:border-gray-800 rounded-2xl hover:border-blue-500 transition-all group"
