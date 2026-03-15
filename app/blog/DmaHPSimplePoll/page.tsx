@@ -94,7 +94,7 @@ Status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR) RxBufferPtr, MAX_PKT_LEN, XAX
 
         {/* RESULTS SECTION */}
         <section className="p-8 bg-surface border border-gray-100 dark:border-gray-800 rounded-3xl shadow-sm">
-          <h3 className="text-lg font-bold text-foreground mb-6">DMA Polling Architecture</h3>
+          <h3 className="text-lg font-bold text-foreground mb-6">DMA Transfer DataCheck() Results</h3>
           <a href="/images/blog/DmaHPSimplePoll/dma_hp_results.png" target="_blank" rel="noopener noreferrer">
             <img src="/images/blog/DmaHPSimplePoll/dma_hp_results.png" alt="Full view" />
           </a>
