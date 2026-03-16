@@ -106,13 +106,13 @@ XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
 
 // Generate TxBuffer Data
 ...
-'}
-<span className="text-emerald-400">
-{'
-// Flush the cache to ensure data coherency
+`}
+              <span className="text-emerald-400">
+                {`// Flush the cache to ensure data coherency
 Xil_DCacheFlushRange((UINTPTR)TxBufferPtr, MAX_PKT_LEN);
 Xil_DCacheFlushRange((UINTPTR)RxBufferPtr, MAX_PKT_LEN);
 `}
+              </span>
             </pre>
 
           <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">Initiate the transfer</h3>
@@ -130,11 +130,11 @@ while ((XAxiDma_Busy(&AxiDma,XAXIDMA_DEVICE_TO_DMA)) ||
 			(XAxiDma_Busy(&AxiDma,XAXIDMA_DMA_TO_DEVICE))) {
   /* Wait */
 }
-'}
-<span className="text-emerald-400">
-{'
-// Invalidate the cache to ensure data coherency
+`}
+            <span className="text-emerald-400">
+              {`// Invalidate the cache to ensure data coherency
 Xil_DCacheInvalidateRange((UINTPTR)RxPacket, MAX_PKT_LEN);`}
+            </span>
           </pre>
         </section>
     
