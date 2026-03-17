@@ -137,17 +137,6 @@ Xil_DCacheInvalidateRange((UINTPTR)RxPacket, MAX_PKT_LEN);`}
             </span>
           </pre>
         </section>
-    
-        {/* RESULTS SECTION */}
-        <section className="p-8 bg-surface border border-gray-100 dark:border-gray-800 rounded-3xl shadow-sm">
-          <h3 className="text-lg font-bold text-foreground mb-6">DMA Transfer DataCheck() Results</h3>
-          <a href="/images/blog/DmaHPSimplePoll/dma_hp_results.png" target="_blank" rel="noopener noreferrer">
-            <img src="/images/blog/DmaHPSimplePoll/dma_hp_results.png" alt="Full view" />
-          </a>
-          <p className="text-sm mt-4 text-gray-500 italic text-center">
-            Figure 2: Successful DMA transfer to DDR on UART console.
-          </p>
-        </section>
       
       </article>
 
